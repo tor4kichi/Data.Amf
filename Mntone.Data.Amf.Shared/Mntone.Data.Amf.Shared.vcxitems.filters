@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)amf_exception.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)amf0_parser.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)amf0_sequencer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)amf0_type.h" />
@@ -15,7 +16,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)AmfPair.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)AmfValue.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)AmfValueType.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)amf_exception.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)com_exception_helper.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IAmfArray.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)IAmfDictionary.h" />

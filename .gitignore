@@ -9,3 +9,9 @@ Generated Files
 *.sdf
 *.suo
 *.vcxproj.user
+Mntone.Data.Amf.UWP/Release/
+Mntone.Data.Amf.UWP/x64/
+Mntone.Data.Amf.UWP/Debug/
+Mntone.Data.Amf.UWP/ARM/
+*.opendb
+Mntone.Data.Amf.VC.db
