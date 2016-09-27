@@ -9,6 +9,7 @@ set WIN81=win81
 set WPS8=wp8
 set WPS81=wp81
 set WPR81=wpa81
+set UWP=uap10.0
 
 set REL=Release
 set NAME=Mntone.Data.Amf
@@ -44,5 +45,17 @@ for %%e in (%EXT%) do copy "%NAME%.%%e" "../../../nuget/data/lib/%WPR81%/%IA32M%
 cd "../../%ARM%-%REL%/%NAME%.WindowsPhone/"
 md "../../../nuget/data/lib/%WPR81%/%ARM%/"
 for %%e in (%EXT%) do copy "%NAME%.%%e" "../../../nuget/data/lib/%WPR81%/%ARM%/" /Y
+
+rem Windows Universal Platform component (IA-32/AMD64/ARM)
+cd "../../%IA32%-%REL%/%NAME%.UWP/"
+md "../../../nuget/data/lib/%UWP%/%IA32M%/"
+for %%e in (%EXT%) do copy "%NAME%.%%e" "../../../nuget/data/lib/%UWP%/%IA32M%/" /Y
+cd "../../%AMD64%-%REL%/%NAME%.UWP/"
+md "../../../nuget/data/lib/%UWP%/%AMD64%/"
+for %%e in (%EXT%) do copy "%NAME%.%%e" "../../../nuget/data/lib/%UWP%/%AMD64%/" /Y
+cd "../../%ARM%-%REL%/%NAME%.UWP/"
+md "../../../nuget/data/lib/%UWP%/%ARM%/"
+for %%e in (%EXT%) do copy "%NAME%.%%e" "../../../nuget/data/lib/%UWP%/%ARM%/" /Y
+
 
 PAUSE

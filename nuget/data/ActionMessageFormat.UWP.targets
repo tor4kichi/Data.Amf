@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="CheckAnyCPU" Condition="'$(Platform)' != 'x64' AND '$(Platform)' != 'x86' AND '$(Platform)' != 'ARM'" BeforeTargets="BeforeBuild">
+    <Error Text="Action Message Format for Windows Runtime does not support the $(Platform) target platform." />
+  </Target>
+  <Target Name="CheckJS" Condition=" '$(MSBuildProjectExtension)' == '.jsproj' " BeforeTargets="BeforeBuild">
+    <Error Text="Action Message Format for Windows Runtime does not support the JavaScript target project." />
+  </Target>
+
+  <PropertyGroup>
+    <Current-Platform Condition="'$(Platform)' == 'Win32'">x86</Current-Platform>
+    <Current-Platform Condition="'$(Platform)' != 'Win32'">$(Platform)</Current-Platform>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetPlatformIdentifier)' == 'UAP'">
+    <Reference Include="$(MSBuildThisFileDirectory)..\..\lib\uap10.0\Mntone.Data.Amf.winmd">
+      <Implementation>Mntone.Data.Amf.dll</Implementation>
+    </Reference>
+    <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\runtimes\win10-$(Current-Platform)\native\Mntone.Data.Amf.dll" />
+  </ItemGroup>
+
+</Project>

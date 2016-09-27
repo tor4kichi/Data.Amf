@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>ActionMessageFormat.UWP</id>
+        <version>1.0.0</version>
+        <title>Action Message Format for UWP</title>
+        <authors>tor4kichi</authors>
+        <owners>mntone qwerty tor4kichi</owners>
+        <licenseUrl>https://github.com/tor4kichi/Data.Amf/blob/master/license.md</licenseUrl>
+        <projectUrl>https://github.com/tor4kichi/Data.Amf</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>Action Message Format for Windows Runtime is the reader and writer of AMF0 and AMF3.</description>
+        <summary>Read or write data in Action Message Format.(build target only uap10.0)</summary>
+        <releaseNotes>fix nuget package issue</releaseNotes>
+        <copyright>Copyright (c) 2013-2015, mntone and qwerty. All rights reserved.</copyright>
+        <language>en-US</language>
+        <tags>UWP uap10.0 mntone Amf Flash Adobe</tags>
+    </metadata>
+    <files>
+        <file src="ActionMessageFormat.UWP.targets" target="build\native\ActionMessageFormat.UWP.targets" />
+        <file src="lib\uap10.0\x86\Mntone.Data.Amf.winmd" target="lib\uap10.0\Mntone.Data.Amf.winmd" />
+        <file src="lib\uap10.0\x86\Mntone.Data.Amf.xml" target="lib\uap10.0\Mntone.Data.Amf.xml" />
+        <file src="lib\uap10.0\ARM\Mntone.Data.Amf.dll" target="runtimes\win10-arm\native\Mntone.Data.Amf.dll" />
+        <file src="lib\uap10.0\ARM\Mntone.Data.Amf.pri" target="runtimes\win10-arm\native\Mntone.Data.Amf.pri" />
+        <file src="lib\uap10.0\x64\Mntone.Data.Amf.dll" target="runtimes\win10-x64\native\Mntone.Data.Amf.dll" />
+        <file src="lib\uap10.0\x64\Mntone.Data.Amf.pri" target="runtimes\win10-x64\native\Mntone.Data.Amf.pri" />
+        <file src="lib\uap10.0\x86\Mntone.Data.Amf.dll" target="runtimes\win10-x86\native\Mntone.Data.Amf.dll" />
+        <file src="lib\uap10.0\x86\Mntone.Data.Amf.pri" target="runtimes\win10-x86\native\Mntone.Data.Amf.pri" />
+        <file src="license.md" target="license.md" />
+    </files>
+</package>
