@@ -1,15 +1,20 @@
-# Action Message Format for Windows Runtime
+# Action Message Format for UWP
 
-[![NuGet](https://img.shields.io/nuget/v/ActionMessageFormat.svg?style=flat-square)](https://www.nuget.org/packages/ActionMessageFormat/) [![Downloads](https://img.shields.io/nuget/dt/ActionMessageFormat.svg?style=flat-square)](https://www.nuget.org/packages/https://img.shields.io/nuget/v/ActionMessageFormat.svg?style=flat-square/) [![License](https://img.shields.io/github/license/mntone/Data.Amf.svg?style=flat-square)](https://github.com/mntone/Data.Amf/blob/master/license.md)
+[![NuGet](https://img.shields.io/nuget/v/ActionMessageFormat.UWP.svg?style=flat-square)](https://www.nuget.org/packages/ActionMessageFormat.UWP/) 
+[![Downloads](https://img.shields.io/nuget/dt/ActionMessageFormat.UWP.svg?style=flat-square)](https://www.nuget.org/packages/https://img.shields.io/nuget/v/ActionMessageFormat.UWP.svg?style=flat-square/) 
+
 
 You treats Action Message Format with this component, which is used by ActionScript family.
+
+(this is modified to uap10.0 build from origianl ActionMessageFormat.)
 
 ## Environment
 You can use
 
-- Windows (8.1),
-- Windows Phone (8.1),
-- Windows Phone 8.
+- ~~Windows (8.1),~~
+- ~~Windows Phone (8.1),~~
+- ~~Windows Phone 8.~~
+- UWP
 
 ## License
 This library and demoapp is “2-clause BSD license.”
@@ -20,3 +25,4 @@ If you know this library in detail, you check “[Document](./Document/)” fold
 
 ## Related projects
 - [RtmpClient for Windows Runtime](//github.com/mntone/RtmpClient)
+- [RtmpClient for UWP](//github.com/tor4kichi/RtmpClient)
